@@ -116,7 +116,7 @@ plot(pressure)
 ## Insert Tables
 See Knitr packages for outputing tables
 
-```{r}
+```{r table1, results = 'asis'}
 knitr::kable(head(cars), 
              caption = "Top Six Rows of CARS", 
              align = "r", digits = 1)
@@ -124,6 +124,34 @@ knitr::kable(head(cars),
 
 ## Insert an equation
 
-$$ Y = \beta_0 + \beta_1x - \alpha - \gamma $$
+$$ Y = \beta_0 + \beta_1x - \alpha - \gamma x^{2n}  $$
+$$ Y = \int\limits_0^1  x dx $$
+$$ Y = \prod_j \sum_{i=1}^n x_{ij} $$
+
+## Insert Images
+
+Here is an image inserted
+
+![sunstar](C:/Users/Rohitesh/Documents/MyFirstDocument/Module 2/Module-2-rmd1/sunstar.png)
+
+Here is the R logo
+
+![r logo](https://www.r-project.org/logo/Rlogo.svg)
+
+
+## Insert an Animated GIF and Video
+
+![sunstar](C:/Users/Rohitesh/Documents/MyFirstDocument/Module 2/Module-2-rmd1/sunstar.gif)
+
+![sunstar](C:/Users/Rohitesh/Documents/MyFirstDocument/Module 2/Module-2-rmd1/sunstar.mp4)
+
+## Insert text with some footnotes
+
+Here is a footnote reference [^1] and another [^longnote]
+
+Here is an inline footnote ^[Inlines notes are easier to write, since you don't have to pick an identifier and move down to type the note.]
+
+[^1]: Here is the footnote.
+[^longnote]: Here's one with multiple blocks.
 
 
