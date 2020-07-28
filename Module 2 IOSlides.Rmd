@@ -1,0 +1,61 @@
+---
+title: "Module 2 - ioslides"
+author: "Rohitesh Natarajan"
+date: "28 July 2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
+## Insert an equation
+
+$$ Y = \beta_0 + \beta_1x - \alpha - \gamma x^{2n}  $$
+
+## Insert Tables
+See Knitr packages for outputing tables
+
+```{r table1, results = 'asis'}
+knitr::kable(head(cars), 
+             caption = "Top Six Rows of CARS", 
+             align = "r", digits = 1)
+```
+
+## Insert Images {.flexbox .vcenter}
+For center align of image, use the above curly brackets next to the heading
+Here is an image inserted
+
+![](C:/Users/Rohitesh/Documents/MyFirstDocument/Module 2/Module-2-rmd1/sunstar.png)
+
+## A slide with 2 columns an image and a bulleted list {.columns-2}
+
+![](C:/Users/Rohitesh/Documents/MyFirstDocument/Module 2/Module-2-rmd1/sunstar.png)
+
+- bullet 1
+- bullet 2
+- bullet 3
