@@ -1,0 +1,108 @@
+---
+title: "Module 2 - RMarkdown Document 1"
+author: "Rohitesh Natarajan"
+date: "28 July 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+# This is a level 1 header
+
+### This is a level 3 header
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. 
+
+Here is a link to [GOOGLE](https://www.google.com/)
+
+Here is a word in **bold** and another word in __bold__.
+
+Here is a word in *italics* and another word in _italics_.
+
+When we compile our document, we are using the `rmarkdown` package (highlight).
+
+Here are some example R commands:
+
+```
+2+2
+mean(c(1,2,3,4,5)) Put in box; This is text in box, not code
+```
+
+Here is an example of a non-numbered list:
+
+4 spaces for indent and 8 for double indent with symbols - understand
+
+* Breakfast
+    - food
+        + eggs
+        + toast
+        + bacon
+    - drink
+        + apple juice
+* Lunch
+    - taco
+* Dinner
+    - baked chicken
+    - broccoli
+    - rice
+
+
+Here is an example of a numbered list:
+
+1. Breakfast
+    a. food
+        i. eggs
+        ii. toast
+        iii. bacon
+    b. drink
+        i. apple juice
+2. Lunch
+    a. taco
+3. Dinner
+    a. baked chicken
+    b. broccoli
+    c. rice
+
+Here is an example of a blockquote:
+
+> This is a block quote. This
+> paragraph has two lines.
+>
+> 1. This is a list inside a block quote.
+> 2. Second item.
+
+
+Here is an example of a nested blockquote: Another way to put in a box with nesting where there is a space between two greater than symbols
+
+> This is a block quote. This
+> paragraph has two lines.
+>
+> > This text is nested
+
+
+Here is an example of code in a blockquote: leave 5 spaces
+
+>     2+2
+>     mean(c(1,2,3,4,5))
+
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
