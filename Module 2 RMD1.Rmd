@@ -93,6 +93,8 @@ Here is an example of code in a blockquote: leave 5 spaces
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
+Each code chunk must have a name like below is r cars
+
 ```{r cars}
 summary(cars)
 ```
@@ -101,8 +103,27 @@ summary(cars)
 
 You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
+```{r pressure10, echo=FALSE}
 plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r pressure2, fig.height=5, fig.width=5}
+plot(pressure)
+```
+
+
+## Insert Tables
+See Knitr packages for outputing tables
+
+```{r}
+knitr::kable(head(cars), 
+             caption = "Top Six Rows of CARS", 
+             align = "r", digits = 1)
+```
+
+## Insert an equation
+
+$$ Y = \beta_0 + \beta_1x - \alpha - \gamma $$
+
+
